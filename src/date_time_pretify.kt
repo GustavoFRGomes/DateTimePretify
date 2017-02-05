@@ -47,9 +47,14 @@ open class DateTimePretifier(val locale : Locale = Locale.getDefault())
     {
         println("Pretifier")
 
-        val dateNow = Date()
+        val dateNow = Date() // Fetches the current date for testing purposes.
         println("Pretifier")
         println("DAY_MONTH_YEAR " +
                 this.PretrifyDate(dateNow, xyz.jagged.gomes.pretify.DateTimePretifier.DateTimeFormats.DAY_MONTH_YEAR))
+        println("YEAR_MONTH_DAY_SLASHED " +
+            this.PretrifyDate(dateNow, xyz.jagged.gomes.pretify.DateTimePretifier.DateTimeFormats.YEAR_MONTH_DAY_SLASHED))
+
+        println("SHORT_WEEK_DAY2_MONTH " +
+            this.PretrifyDate(dateNow, xyz.jagged.gomes.pretify.DateTimePretifier.DateTimeFormats.SHORT_WEEK_DAY2_MONTH))
     }
 }
